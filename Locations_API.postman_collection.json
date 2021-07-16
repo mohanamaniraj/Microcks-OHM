@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "bba4279c-65d3-4797-8656-cb79227a391a",
 		"name": "Locations_API",
-		"description": "version=2.0 - This is a Location API description"
+		"description": "version=2.0 - This is a Location API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
