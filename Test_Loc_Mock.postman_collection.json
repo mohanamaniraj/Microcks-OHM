@@ -72,14 +72,6 @@
 						{
 							"key": "ETag",
 							"value": "W/\"207-zMApVZP0G1SZMZdSk5aKgiS1UKQ\""
-						},
-						{
-							"key": "Vary",
-							"value": "Accept-Encoding"
-						},
-						{
-							"key": "Content-Encoding",
-							"value": "gzip"
 						}
 					],
 					"cookie": [],
