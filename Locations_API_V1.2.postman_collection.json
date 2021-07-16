@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "bba4279c-65d3-4797-8656-cb79227a391a",
+		"name": "Locations_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api-cdt.maersk.com/locations/0MZSJ9SROEGKD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-cdt.maersk.com/locations/0MZSJ9SROEGKD",
+					"protocol": "https",
+					"host": [
+						"api-cdt",
+						"maersk",
+						"com"
+					],
+					"path": [
+						"locations",
+						"0MZSJ9SROEGKD"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://api-cdt.maersk.com/locations/0MZSJ9SROEGKD",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api-cdt.maersk.com/locations/0MZSJ9SROEGKD",
+							"protocol": "https",
+							"host": [
+								"api-cdt",
+								"maersk",
+								"com"
+							],
+							"path": [
+								"locations",
+								"0MZSJ9SROEGKD"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "286"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=2761"
+						},
+						{
+							"key": "Expires",
+							"value": "Fri, 16 Jul 2021 07:29:12 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Jul 2021 06:43:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "nextPageToken, Location, Content-Disposition, First-Page, Previous-Page, Next-Page, Last-Page, Current-Page"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "86400"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "false"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*, Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, nextPageToken, additional-resources, Maersk-Usi-Authorization, requestDate, userId, Consumer-Key, x-maersk-consumer-key, x-datadog-origin, x-datadog-parent-id, x-datadog-sampled, x-datadog-sampling-priority, x-datadog-trace-id, booking-trackingid"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST,PATCH,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "x-akamai-reference",
+							"value": "0.97961160.1626417791.62da429"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000 ; includeSubDomains"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "bm_sv=30E2F20A2BF74D2FDAC81F5C6F49DF6E~d1w/x3M5XSk54wsbF4D2jANw/Bk9Uk6L2XmP52Uo0O8RMnCMRKvSUfEfS8DMI8No/sGTPscl84EJzrFV4zUBAi5v8vyRKoa02Y1c7DQoH3F43oY5ScLSWdIQVbO2ahqqLAJKdG8Cw2ZnEzEAM3xEnLWazWFoZsIB/8DUGxFr4oA=; Domain=.maersk.com; Path=/; Max-Age=7017; HttpOnly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"0MZSJ9SROEGKD\",\n    \"unLocCode\": \"GBFXT\",\n    \"countryName\": \"United Kingdom\",\n    \"countryCode\": \"GB\",\n    \"cityName\": \"Felixstowe\",\n    \"siteName\": \"FELIXSTOWE TRINITY TERMINAL\",\n    \"maerskRkstCode\": \"GBFXSTM\",\n    \"maerskRktsCode\": \"FXS\",\n    \"timezoneId\": \"Europe/London\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"21X0YL36747LQ\"\n}"
+				},
+				{
+					"name": "https://api-cdt.maersk.com/locations/0MZSJ9SROEGKD",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api-cdt.maersk.com/locations/CDQYK28YV7BKN",
+							"protocol": "https",
+							"host": [
+								"api-cdt",
+								"maersk",
+								"com"
+							],
+							"path": [
+								"locations",
+								"CDQYK28YV7BKN"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n  \"type\": \"TERMINAL\",\r\n  \"maerskGeoLocationId\": \"CDQYK28YV7BKN\",\r\n  \"unLocCode\": \"MAPTM\",\r\n  \"countryName\": \"Morocco\",\r\n  \"countryCode\": \"MA\",\r\n  \"cityName\": \"Port Tangier Mediterranee\",\r\n  \"siteName\": \"Tanger Med 2\",\r\n  \"maerskRkstCode\": \"MAPTM02\",\r\n  \"maerskRktsCode\": \"CJ1\",\r\n  \"brands\": [\r\n    \"MAEU\",\r\n    \"MCPU\",\r\n    \"SAFM\",\r\n    \"SEAU\",\r\n    \"SEJJ\"\r\n  ],\r\n  \"brandNames\": [\r\n    \"MCC Transport\",\r\n    \"Maersk Line\",\r\n    \"Safmarine\",\r\n    \"SeaGo Line\",\r\n    \"SeaLand\"\r\n  ],\r\n  \"countryGeoId\": \"382FOT0PLIJY6\"\r\n}"
+				}
+			]
+		}
+	]
+}
