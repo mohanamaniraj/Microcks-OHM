@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "0b3bf4b4-f720-47e5-8f78-4b2e690445a2",
+		"name": "Location_mock",
+		"description": "version=1.0 - This is a Location API description",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://38d08525-fde4-4afe-9202-1c9f09d6c15f.mock.pstmn.io/locations/CDQYK28YV7BKN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://38d08525-fde4-4afe-9202-1c9f09d6c15f.mock.pstmn.io/locations/CDQYK28YV7BKN"
+			},
+			"response": [
+				{
+					"name": "https://38d08525-fde4-4afe-9202-1c9f09d6c15f.mock.pstmn.io/locations/CDQYK28YV7BKN",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "https://38d08525-fde4-4afe-9202-1c9f09d6c15f.mock.pstmn.io/locations/CDQYK28YV7BKN"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 16 Jul 2021 09:01:27 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=e8d7e9dbba9628a5"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=96fc1a64573596dc"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "118"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1626426097"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"20a-fv9aww1/p6OGQCwo8nK66afQ8Dc\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\r\n  \"type\": \"TERMINAL\",\r\n  \"maerskGeoLocationId\": \"CDQYK28YV7BKN\",\r\n  \"unLocCode\": \"MAPTM\",\r\n  \"countryName\": \"Morocco\",\r\n  \"countryCode\": \"MA\",\r\n  \"cityName\": \"Port Tangier Mediterranee\",\r\n  \"siteName\": \"Tanger Med 2\",\r\n  \"maerskRkstCode\": \"MAPTM02\",\r\n  \"maerskRktsCode\": \"CJ1\",\r\n  \"brands\": [\r\n    \"MAEU\",\r\n    \"MCPU\",\r\n    \"SAFM\",\r\n    \"SEAU\",\r\n    \"SEJJ\"\r\n  ],\r\n  \"brandNames\": [\r\n    \"MCC Transport\",\r\n    \"Maersk Line\",\r\n    \"Safmarine\",\r\n    \"SeaGo Line\",\r\n    \"SeaLand\"\r\n  ],\r\n  \"countryGeoId\": \"382FOT0PLIJY6\"\r\n}"
+				}
+			]
+		},
+		{
+			"name": "https://38d08525-fde4-4afe-9202-1c9f09d6c15f.mock.pstmn.io/locations/CDQYK28YV7BKN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://38d08525-fde4-4afe-9202-1c9f09d6c15f.mock.pstmn.io/locations/CDQYK28YV7BKN"
+			},
+			"response": [
+				{
+					"name": "https://38d08525-fde4-4afe-9202-1c9f09d6c15f.mock.pstmn.io/locations/CDQYK28YV7BKN",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "https://38d08525-fde4-4afe-9202-1c9f09d6c15f.mock.pstmn.io/locations/CDQYK28YV7BKN"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 16 Jul 2021 09:00:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=e9678e0a47e22860"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=818438f798ba21ab"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1626426097"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"20a-fv9aww1/p6OGQCwo8nK66afQ8Dc\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\r\n  \"type\": \"TERMINAL\",\r\n  \"maerskGeoLocationId\": \"CDQYK28YV7BKN\",\r\n  \"unLocCode\": \"MAPTM\",\r\n  \"countryName\": \"Morocco\",\r\n  \"countryCode\": \"MA\",\r\n  \"cityName\": \"Port Tangier Mediterranee\",\r\n  \"siteName\": \"Tanger Med 2\",\r\n  \"maerskRkstCode\": \"MAPTM02\",\r\n  \"maerskRktsCode\": \"CJ1\",\r\n  \"brands\": [\r\n    \"MAEU\",\r\n    \"MCPU\",\r\n    \"SAFM\",\r\n    \"SEAU\",\r\n    \"SEJJ\"\r\n  ],\r\n  \"brandNames\": [\r\n    \"MCC Transport\",\r\n    \"Maersk Line\",\r\n    \"Safmarine\",\r\n    \"SeaGo Line\",\r\n    \"SeaLand\"\r\n  ],\r\n  \"countryGeoId\": \"382FOT0PLIJY6\"\r\n}"
+				}
+			]
+		}
+	]
+}
