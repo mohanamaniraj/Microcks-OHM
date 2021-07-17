@@ -53,62 +53,7 @@
 					"code": 200,
 					"_postman_previewlanguage": "json",
 					"header": [
-						{
-							"key": "Date",
-							"value": "Sat, 17 Jul 2021 09:57:33 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "text/html; charset=utf-8"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Server",
-							"value": "nginx"
-						},
-						{
-							"key": "x-srv-trace",
-							"value": "v=1;t=744a70fcd93669ca"
-						},
-						{
-							"key": "x-srv-span",
-							"value": "v=1;s=abffffe3679914a7"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						},
-						{
-							"key": "X-RateLimit-Limit",
-							"value": "120"
-						},
-						{
-							"key": "X-RateLimit-Remaining",
-							"value": "119"
-						},
-						{
-							"key": "X-RateLimit-Reset",
-							"value": "1626515912"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"223-JoAhgx2NSAtnFJ667xmzpsmmXbE\""
-						},
-						{
-							"key": "Vary",
-							"value": "Accept-Encoding"
-						},
-						{
-							"key": "Content-Encoding",
-							"value": "gzip"
-						}
+						
 					],
 					"cookie": [],
 					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"CDQYK28YV7BKN\",\n    \"unLocCode\": \"MAPTM\",\n    \"countryName\": \"Morocco\",\n    \"countryCode\": \"MA\",\n    \"cityName\": \"Port Tangier Mediterranee\",\n    \"siteName\": \"Tanger Med 2\",\n    \"maerskRkstCode\": \"MAPTM02\",\n    \"maerskRktsCode\": \"CJ1\",\n    \"brands\": [\n        \"MAEU\",\n        \"MCPU\",\n        \"SAFM\",\n        \"SEAU\",\n        \"SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport\",\n        \"Maersk Line\",\n        \"Safmarine\",\n        \"SeaGo Line\",\n        \"SeaLand\"\n    ],\n    \"countryGeoId\": \"382FOT0PLIJY6\"\n}"
