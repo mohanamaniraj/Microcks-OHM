@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "af41e95d-50bb-45d0-b2b7-3dd4d725f165",
+		"name": "BOL_IIP_API",
+		"description": "version=1.0 - This is a BOL API description",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api-cdt.maersk.com/booking/billsOfLading/UIAUTO001/tasks?brandCode=MAEU&customerCode=41048713004",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJraWQiOiJrTEt2U2xFcEREK1pQQUJYbUgvV3lndHZLVTQ9IiwiYWxnIjoiUlMyNTYifQ.eyJhdF9oYXNoIjoiejBOWENuazA2bnYyS3VEaGlvd0d6dyIsInN1YiI6ImltcG9ydHNfdXNlcl8xIiwiZmlyc3RuYW1lIjoiS2F2aXRoYSIsImF1ZGl0VHJhY2tpbmdJZCI6IjU5ZGY3NTk3LWNlOTItNDQzYi1iOWNjLTY4MDE1NmQyOWU5Ni0yNjAzMzY1Iiwicm9sZXMiOlsiQ29udHJhY3RSYXRlIiwiQmFzaWNDdXN0b21lciIsIldCT0xBcHByb3ZlciIsIkJvb2tpbmciLCJJbnZvaWNlcyIsIlBheW1lbnRzIiwiRG9jdW1lbnRhdGlvbiIsIk1hZXJza0ludGVybmFsIl0sImlzcyI6Imh0dHBzOi8vaWFtLWNkdC5tYWVyc2suY29tL2FjbS9vYXV0aDIvbWF1IiwidG9rZW5OYW1lIjoiaWRfdG9rZW4iLCJvZmZpY2UiOiJNdW1iYWkgKEJvbWJheSkgLSBJTiIsImFjciI6IjAiLCJhenAiOiJiY2EwMDEiLCJhdXRoX3RpbWUiOjE2MjY1MDY0MzcsInBlcnNvbmlkIjoiMTAwMDAzNDQxNDciLCJleHAiOjE2MjY1MTM2NDYsImN1c3RvbWVyX2NvZGUiOiI0MTA0ODcxMzAwNCIsImlhdCI6MTYyNjUwNjQ0NiwiZW1haWwiOiJrYXZpdGhhLmthbWF0aEBtYWVyc2suY29tIiwibm9uY2UiOiJiUUFUclVEMFBzc2Foek9pTnJEYSIsImxhc3RuYW1lIjoiS2FtYXQiLCJhdWQiOiJiY2EwMDEiLCJjX2hhc2giOiJianRLS2ZCck1UNEFPTm1velVwTnhBIiwiY2FycmllciI6Ik1BRVUiLCJyZWFsbSI6Ii9tYXUiLCJ0b2tlblR5cGUiOiJKV1RUb2tlbiIsInVzZXJuYW1lIjoiaW1wb3J0c191c2VyXzEifQ.dY_qanQH1ek6VT_T094oCMgn3CbjcmVl2ZucRmzg05Z3o_Y6IUXtzwg4sGhzPp8h4nZEqEW1kTxdwuie6XQXFxLpxJGniX1q5TI-lyZ0HNYf19bgBhagg_5wCRYSU5GrQCakfp_4XKTnyl-8XO-j7rG-lx7bfuzHNH3ZFPflHCbpD0Ba4PX3X7St-K253egVF-TrOowHu8Ci6N-Wb9jG8NWGh2SUxQ74YWmY-Zyp3sPG0rbFXrtUpexuGBhwYSsVP2MxdvgARb_GKI9Q9dkE0pqSYJoa7lRw1kZZQjyef7P8c7czmCIjslCyW46lPQ3iqtBeBBva0gI0eKCW00Vy-A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api-cdt.maersk.com/booking/billsOfLading/UIAUTO001/tasks?brandCode=MAEU&customerCode=41048713004",
+					"protocol": "https",
+					"host": [
+						"api-cdt",
+						"maersk",
+						"com"
+					],
+					"path": [
+						"booking",
+						"billsOfLading",
+						"UIAUTO001",
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "brandCode",
+							"value": "MAEU"
+						},
+						{
+							"key": "customerCode",
+							"value": "41048713004"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://api-cdt.maersk.com/booking/billsOfLading/UIAUTO001/tasks?brandCode=MAEU&customerCode=41048713004",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJraWQiOiJrTEt2U2xFcEREK1pQQUJYbUgvV3lndHZLVTQ9IiwiYWxnIjoiUlMyNTYifQ.eyJhdF9oYXNoIjoiejBOWENuazA2bnYyS3VEaGlvd0d6dyIsInN1YiI6ImltcG9ydHNfdXNlcl8xIiwiZmlyc3RuYW1lIjoiS2F2aXRoYSIsImF1ZGl0VHJhY2tpbmdJZCI6IjU5ZGY3NTk3LWNlOTItNDQzYi1iOWNjLTY4MDE1NmQyOWU5Ni0yNjAzMzY1Iiwicm9sZXMiOlsiQ29udHJhY3RSYXRlIiwiQmFzaWNDdXN0b21lciIsIldCT0xBcHByb3ZlciIsIkJvb2tpbmciLCJJbnZvaWNlcyIsIlBheW1lbnRzIiwiRG9jdW1lbnRhdGlvbiIsIk1hZXJza0ludGVybmFsIl0sImlzcyI6Imh0dHBzOi8vaWFtLWNkdC5tYWVyc2suY29tL2FjbS9vYXV0aDIvbWF1IiwidG9rZW5OYW1lIjoiaWRfdG9rZW4iLCJvZmZpY2UiOiJNdW1iYWkgKEJvbWJheSkgLSBJTiIsImFjciI6IjAiLCJhenAiOiJiY2EwMDEiLCJhdXRoX3RpbWUiOjE2MjY1MDY0MzcsInBlcnNvbmlkIjoiMTAwMDAzNDQxNDciLCJleHAiOjE2MjY1MTM2NDYsImN1c3RvbWVyX2NvZGUiOiI0MTA0ODcxMzAwNCIsImlhdCI6MTYyNjUwNjQ0NiwiZW1haWwiOiJrYXZpdGhhLmthbWF0aEBtYWVyc2suY29tIiwibm9uY2UiOiJiUUFUclVEMFBzc2Foek9pTnJEYSIsImxhc3RuYW1lIjoiS2FtYXQiLCJhdWQiOiJiY2EwMDEiLCJjX2hhc2giOiJianRLS2ZCck1UNEFPTm1velVwTnhBIiwiY2FycmllciI6Ik1BRVUiLCJyZWFsbSI6Ii9tYXUiLCJ0b2tlblR5cGUiOiJKV1RUb2tlbiIsInVzZXJuYW1lIjoiaW1wb3J0c191c2VyXzEifQ.dY_qanQH1ek6VT_T094oCMgn3CbjcmVl2ZucRmzg05Z3o_Y6IUXtzwg4sGhzPp8h4nZEqEW1kTxdwuie6XQXFxLpxJGniX1q5TI-lyZ0HNYf19bgBhagg_5wCRYSU5GrQCakfp_4XKTnyl-8XO-j7rG-lx7bfuzHNH3ZFPflHCbpD0Ba4PX3X7St-K253egVF-TrOowHu8Ci6N-Wb9jG8NWGh2SUxQ74YWmY-Zyp3sPG0rbFXrtUpexuGBhwYSsVP2MxdvgARb_GKI9Q9dkE0pqSYJoa7lRw1kZZQjyef7P8c7czmCIjslCyW46lPQ3iqtBeBBva0gI0eKCW00Vy-A",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api-cdt.maersk.com/booking/billsOfLading/UIAUTO001/tasks?brandCode=MAEU&customerCode=41048713004",
+							"protocol": "https",
+							"host": [
+								"api-cdt",
+								"maersk",
+								"com"
+							],
+							"path": [
+								"booking",
+								"billsOfLading",
+								"UIAUTO001",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "brandCode",
+									"value": "MAEU"
+								},
+								{
+									"key": "customerCode",
+									"value": "41048713004"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/stream+json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1525"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 Jul 2021 07:37:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "nextPageToken, Location, Content-Disposition, First-Page, Previous-Page, Next-Page, Last-Page, Current-Page"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "86400"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "false"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*, Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, nextPageToken, additional-resources, Maersk-Usi-Authorization, requestDate, userId, Consumer-Key, x-maersk-consumer-key, x-datadog-origin, x-datadog-parent-id, x-datadog-sampled, x-datadog-sampling-priority, x-datadog-trace-id, booking-trackingid"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET,POST,PATCH,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "x-akamai-reference",
+							"value": "0.46af3b17.1626507449.ca269e"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000 ; includeSubDomains"
+						}
+					],
+					"cookie": [],
+					"body": "{\"taskGroupCode\":\"0000000000076\",\"taskGroupName\":\"Import\",\"taskCode\":\"0000000000068\",\"taskName\":\"Issue Import Customs Manifest\",\"ownerCategory\":\"Carrier\",\"statusCode\":\"1\",\"statusCodeDescription\":\"Pending\",\"dueDateUTC\":\"2020-09-22T08:30:26.000\",\"lastUpdatedDateUTC\":\"2020-09-22T08:30:26.000\",\"statusLastUpdatedDateUTC\":\"2020-09-22T08:30:26.000\",\"taskLevel\":\"Billoflading\"}\n{\"taskGroupCode\":\"0000000000076\",\"taskGroupName\":\"Import\",\"taskCode\":\"0000000000070\",\"taskName\":\"Receive Consignees Instructions for Release (Waybill)\",\"ownerCategory\":\"Carrier\",\"statusCode\":\"1\",\"statusCodeDescription\":\"Pending\",\"dueDateUTC\":\"2020-09-22T08:30:26.000\",\"lastUpdatedDateUTC\":\"2020-09-22T08:30:26.000\",\"statusLastUpdatedDateUTC\":\"2020-09-22T08:30:26.000\",\"taskLevel\":\"Billoflading\"}\n{\"taskGroupCode\":\"0000000000076\",\"taskGroupName\":\"Import\",\"taskCode\":\"0000000000100\",\"taskName\":\"Approve Freight Release (Documentation)\",\"ownerCategory\":\"Carrier\",\"statusCode\":\"1\",\"statusCodeDescription\":\"Pending\",\"dueDateUTC\":\"2020-09-22T08:30:26.000\",\"lastUpdatedDateUTC\":\"2020-09-22T08:30:26.000\",\"statusLastUpdatedDateUTC\":\"2020-09-22T08:30:26.000\",\"taskLevel\":\"Billoflading\"}\n{\"taskGroupCode\":\"0000000000076\",\"taskGroupName\":\"Import\",\"taskCode\":\"0000000000103\",\"taskName\":\"Approve Freight Release (Import)\",\"ownerCategory\":\"Carrier\",\"statusCode\":\"1\",\"statusCodeDescription\":\"Pending\",\"dueDateUTC\":\"2020-09-22T08:30:26.000\",\"lastUpdatedDateUTC\":\"2020-09-22T08:30:26.000\",\"statusLastUpdatedDateUTC\":\"2020-09-22T08:30:26.000\",\"taskLevel\":\"Billoflading\"}\n"
+				},
+				{
+					"name": "https://api-cdt.maersk.com/booking/billsOfLading/UIAUTO001/tasks?brandCode=MAEU&customerCode=41048713004",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJraWQiOiJrTEt2U2xFcEREK1pQQUJYbUgvV3lndHZLVTQ9IiwiYWxnIjoiUlMyNTYifQ.eyJhdF9oYXNoIjoiejBOWENuazA2bnYyS3VEaGlvd0d6dyIsInN1YiI6ImltcG9ydHNfdXNlcl8xIiwiZmlyc3RuYW1lIjoiS2F2aXRoYSIsImF1ZGl0VHJhY2tpbmdJZCI6IjU5ZGY3NTk3LWNlOTItNDQzYi1iOWNjLTY4MDE1NmQyOWU5Ni0yNjAzMzY1Iiwicm9sZXMiOlsiQ29udHJhY3RSYXRlIiwiQmFzaWNDdXN0b21lciIsIldCT0xBcHByb3ZlciIsIkJvb2tpbmciLCJJbnZvaWNlcyIsIlBheW1lbnRzIiwiRG9jdW1lbnRhdGlvbiIsIk1hZXJza0ludGVybmFsIl0sImlzcyI6Imh0dHBzOi8vaWFtLWNkdC5tYWVyc2suY29tL2FjbS9vYXV0aDIvbWF1IiwidG9rZW5OYW1lIjoiaWRfdG9rZW4iLCJvZmZpY2UiOiJNdW1iYWkgKEJvbWJheSkgLSBJTiIsImFjciI6IjAiLCJhenAiOiJiY2EwMDEiLCJhdXRoX3RpbWUiOjE2MjY1MDY0MzcsInBlcnNvbmlkIjoiMTAwMDAzNDQxNDciLCJleHAiOjE2MjY1MTM2NDYsImN1c3RvbWVyX2NvZGUiOiI0MTA0ODcxMzAwNCIsImlhdCI6MTYyNjUwNjQ0NiwiZW1haWwiOiJrYXZpdGhhLmthbWF0aEBtYWVyc2suY29tIiwibm9uY2UiOiJiUUFUclVEMFBzc2Foek9pTnJEYSIsImxhc3RuYW1lIjoiS2FtYXQiLCJhdWQiOiJiY2EwMDEiLCJjX2hhc2giOiJianRLS2ZCck1UNEFPTm1velVwTnhBIiwiY2FycmllciI6Ik1BRVUiLCJyZWFsbSI6Ii9tYXUiLCJ0b2tlblR5cGUiOiJKV1RUb2tlbiIsInVzZXJuYW1lIjoiaW1wb3J0c191c2VyXzEifQ.dY_qanQH1ek6VT_T094oCMgn3CbjcmVl2ZucRmzg05Z3o_Y6IUXtzwg4sGhzPp8h4nZEqEW1kTxdwuie6XQXFxLpxJGniX1q5TI-lyZ0HNYf19bgBhagg_5wCRYSU5GrQCakfp_4XKTnyl-8XO-j7rG-lx7bfuzHNH3ZFPflHCbpD0Ba4PX3X7St-K253egVF-TrOowHu8Ci6N-Wb9jG8NWGh2SUxQ74YWmY-Zyp3sPG0rbFXrtUpexuGBhwYSsVP2MxdvgARb_GKI9Q9dkE0pqSYJoa7lRw1kZZQjyef7P8c7czmCIjslCyW46lPQ3iqtBeBBva0gI0eKCW00Vy-A",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api-cdt.maersk.com/booking/billsOfLading/UIAUTO002/tasks?brandCode=MAEU&customerCode=41048713004",
+							"protocol": "https",
+							"host": [
+								"api-cdt",
+								"maersk",
+								"com"
+							],
+							"path": [
+								"booking",
+								"billsOfLading",
+								"UIAUTO002",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "brandCode",
+									"value": "MAEU"
+								},
+								{
+									"key": "customerCode",
+									"value": "41048713004"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n    \"taskGroupCode\": \"0000000000076\",\r\n    \"taskGroupName\": \"Import\",\r\n    \"taskCode\": \"0000000000068\",\r\n    \"taskName\": \"Issue Import Customs Manifest\",\r\n    \"ownerCategory\": \"Carrier\",\r\n    \"statusCode\": \"1\",\r\n    \"statusCodeDescription\": \"Pending\",\r\n    \"dueDateUTC\": \"2020-09-22T08:30:26.000\",\r\n    \"lastUpdatedDateUTC\": \"2020-09-22T08:30:26.000\",\r\n    \"statusLastUpdatedDateUTC\": \"2020-09-22T08:30:26.000\",\r\n    \"taskLevel\": \"Billoflading\"\r\n}\r\n{\r\n    \"taskGroupCode\": \"0000000000076\",\r\n    \"taskGroupName\": \"Import\",\r\n    \"taskCode\": \"0000000000070\",\r\n    \"taskName\": \"Receive Consignees Instructions for Release (Waybill)\",\r\n    \"ownerCategory\": \"Carrier\",\r\n    \"statusCode\": \"1\",\r\n    \"statusCodeDescription\": \"Pending\",\r\n    \"dueDateUTC\": \"2020-09-22T08:30:26.000\",\r\n    \"lastUpdatedDateUTC\": \"2020-09-22T08:30:26.000\",\r\n    \"statusLastUpdatedDateUTC\": \"2020-09-22T08:30:26.000\",\r\n    \"taskLevel\": \"Billoflading\"\r\n}\r\n{\r\n    \"taskGroupCode\": \"0000000000076\",\r\n    \"taskGroupName\": \"Import\",\r\n    \"taskCode\": \"0000000000100\",\r\n    \"taskName\": \"Approve Freight Release (Documentation)\",\r\n    \"ownerCategory\": \"Carrier\",\r\n    \"statusCode\": \"1\",\r\n    \"statusCodeDescription\": \"Pending\",\r\n    \"dueDateUTC\": \"2020-09-22T08:30:26.000\",\r\n    \"lastUpdatedDateUTC\": \"2020-09-22T08:30:26.000\",\r\n    \"statusLastUpdatedDateUTC\": \"2020-09-22T08:30:26.000\",\r\n    \"taskLevel\": \"Billoflading\"\r\n}\r\n{\r\n    \"taskGroupCode\": \"0000000000076\",\r\n    \"taskGroupName\": \"Import\",\r\n    \"taskCode\": \"0000000000103\",\r\n    \"taskName\": \"Approve Freight Release (Import)\",\r\n    \"ownerCategory\": \"Carrier\",\r\n    \"statusCode\": \"1\",\r\n    \"statusCodeDescription\": \"Pending\",\r\n    \"dueDateUTC\": \"2020-09-22T08:30:26.000\",\r\n    \"lastUpdatedDateUTC\": \"2020-09-22T08:30:26.000\",\r\n    \"statusLastUpdatedDateUTC\": \"2020-09-22T08:30:26.000\",\r\n    \"taskLevel\": \"Billoflading\"\r\n}"
+				}
+			]
+		}
+	]
+}
