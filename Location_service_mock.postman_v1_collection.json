@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "50c48ec7-566c-473b-844c-db94410a7b1b",
+		"name": "Location_service_mock",
+		"description": "version=1.0 - This is a location API description",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "locations/:loc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/locations/:loc",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"locations",
+						":loc"
+					],
+					"variable": [
+						{
+							"key": "loc"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "0MZSJ9SROEGKD",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "0MZSJ9SROEGKD"
+								}
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"0MZSJ9SROEGKD\",\n    \"unLocCode\": \"GBFXT\",\n    \"countryName\": \"United Kingdom\",\n    \"countryCode\": \"GB\",\n    \"cityName\": \"Felixstowe\",\n    \"siteName\": \"FELIXSTOWE TRINITY TERMINAL\",\n    \"maerskRkstCode\": \"GBFXSTM\",\n    \"maerskRktsCode\": \"FXS\",\n    \"brands\": [\n        \"MAEU\",\n        \"MCPU\",\n        \"SAFM\",\n        \"SEAU\",\n        \"SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport\",\n        \"Maersk Line\",\n        \"Safmarine\",\n        \"SeaGo Line\",\n        \"SeaLand\"\n    ],\n    \"countryGeoId\": \"21X0YL36747LQ\"\n}"
+				},
+				{
+					"name": "CDQYK28YV7BKN",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "CDQYK28YV7BKN"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n  \"type\": \"TERMINAL\",\r\n  \"maerskGeoLocationId\": \"CDQYK28YV7BKN\",\r\n  \"unLocCode\": \"MAPTM\",\r\n  \"countryName\": \"Morocco\",\r\n  \"countryCode\": \"MA\",\r\n  \"cityName\": \"Port Tangier Mediterranee\",\r\n  \"siteName\": \"Tanger Med 2\",\r\n  \"maerskRkstCode\": \"MAPTM02\",\r\n  \"maerskRktsCode\": \"CJ1\",\r\n  \"brands\": [\r\n    \"MAEU\",\r\n    \"MCPU\",\r\n    \"SAFM\",\r\n    \"SEAU\",\r\n    \"SEJJ\"\r\n  ],\r\n  \"brandNames\": [\r\n    \"MCC Transport\",\r\n    \"Maersk Line\",\r\n    \"Safmarine\",\r\n    \"SeaGo Line\",\r\n    \"SeaLand\"\r\n  ],\r\n  \"countryGeoId\": \"382FOT0PLIJY6\"\r\n}"
+				},
+				{
+					"name": "KYKBROU8A0XZB",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "KYKBROU8A0XZB"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n  \"type\": \"TERMINAL\",\r\n  \"maerskGeoLocationId\": \"KYKBROU8A0XZB\",\r\n  \"unLocCode\": \"FRFOS\",\r\n  \"countryName\": \"France\",\r\n  \"countryCode\": \"FR\",\r\n  \"cityName\": \"Fos sur Mer\",\r\n  \"regionCode\": \"13\",\r\n  \"regionName\": \"Bouches-du-Rhone\",\r\n  \"siteName\": \"Seayard 2XL\",\r\n  \"maerskRkstCode\": \"FRFSMXL\",\r\n  \"maerskRktsCode\": \"FSM\",\r\n  \"brands\": [\r\n    \"MAEU\",\r\n    \"MCPU\",\r\n    \"SAFM\",\r\n    \"SEAU\",\r\n    \"SEJJ\"\r\n  ],\r\n  \"brandNames\": [\r\n    \"MCC Transport\",\r\n    \"Maersk Line\",\r\n    \"Safmarine\",\r\n    \"SeaGo Line\",\r\n    \"SeaLand\"\r\n  ],\r\n  \"countryGeoId\": \"29AS0AX2Y69A6\"\r\n}"
+				},
+				{
+					"name": "SNNTSJXXJGR3P",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "SNNTSJXXJGR3P"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n  \"type\": \"TERMINAL\",\r\n  \"maerskGeoLocationId\": \"SNNTSJXXJGR3P\",\r\n  \"unLocCode\": \"VNSGN\",\r\n  \"countryName\": \"Vietnam\",\r\n  \"countryCode\": \"VN\",\r\n  \"cityName\": \"Ho Chi Minh City\",\r\n  \"regionCode\": \"65\",\r\n  \"regionName\": \"Ho Chi Minh\",\r\n  \"siteName\": \"SP ITC Port\",\r\n  \"maerskRkstCode\": \"VNSGNIT\",\r\n  \"maerskRktsCode\": \"SGN\",\r\n  \"brands\": [\r\n    \"MAEU\",\r\n    \"MCPU\",\r\n    \"SAFM\",\r\n    \"SEAU\",\r\n    \"SEJJ\"\r\n  ],\r\n  \"brandNames\": [\r\n    \"MCC Transport\",\r\n    \"Maersk Line\",\r\n    \"Safmarine\",\r\n    \"SeaGo Line\",\r\n    \"SeaLand\"\r\n  ],\r\n  \"countryGeoId\": \"2ICNXPFTOW22M\"\r\n}"
+				}
+			]
+		}
+	]
+}
