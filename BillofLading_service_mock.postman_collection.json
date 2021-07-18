@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "79cfe089-f2f3-41a9-b9d6-771c392df2a8",
+		"name": "BillofLading_service_mock",
+		"description": "version=1.0 - This is a BOL API description",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "booking/billsOfLading/:BOL?customerCode={{customerCode}}&brandCode={{brandCode}}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/booking/billsOfLading/:BOL?customerCode={{customerCode}}&brandCode={{brandCode}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"booking",
+						"billsOfLading",
+						":BOL"
+					],
+					"query": [
+						{
+							"key": "customerCode",
+							"value": "{{customerCode}}"
+						},
+						{
+							"key": "brandCode",
+							"value": "{{brandCode}}"
+						}
+					],
+					"variable": [
+						{
+							"key": "BOL"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "606180411",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/booking/billsOfLading/:BOL?customerCode=10000007951&brandCode=MAEU",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"booking",
+								"billsOfLading",
+								":BOL"
+							],
+							"query": [
+								{
+									"key": "customerCode",
+									"value": "10000007951"
+								},
+								{
+									"key": "brandCode",
+									"value": "MAEU"
+								}
+							],
+							"variable": [
+								{
+									"key": "BOL",
+									"value": "606180411"
+								}
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"id\": \"606180411\",\n    \"motherShipmentId\": \"606180411\",\n    \"brandCode\": \"MAEU\",\n    \"etaChangeReason\": \"In order to preserve its schedule, the vessel had to do a port omission and your shipment has been replanned on the next available vessel.\",\n    \"etaLastUpdated\": \"2018-12-14T10:52:07\",\n    \"exportServiceMode\": \"CY\",\n    \"importServiceMode\": \"CY\",\n    \"transportPlan\": [\n        {\n            \"freightMode\": \"L\",\n            \"modeCode\": \"TRK\",\n            \"modeDescription\": \"TRUCK\",\n            \"vessel\": {},\n            \"start\": {\n                \"isPlaceOfReceipt\": true,\n                \"isPortOfLoading\": false,\n                \"location\": {\n                    \"maerskGeoLocationId\": \"36F5D3MEVZ8U7\",\n                    \"unLocCode\": \"THBKK\",\n                    \"siteName\": \"Lat Krabang\",\n                    \"cityName\": \"Bangkok\",\n                    \"countryName\": \"Thailand\",\n                    \"countryCode\": \"TH\"\n                },\n                \"originalEtdLocal\": \"2018-11-15T04:00:00.000\",\n                \"currentEtdLocal\": \"2018-11-15T04:00:00.000\",\n                \"departureMaerskGeoIdName\": \"Lat Krabang                        \",\n                \"currentEtdUTC\": \"2018-11-14T21:00:00.000\"\n            },\n            \"end\": {\n                \"isPortOfDischarge\": false,\n                \"isPlaceOfDelivery\": false,\n                \"location\": {\n                    \"maerskGeoLocationId\": \"17TABFY4GWNWS\",\n                    \"unLocCode\": \"THLCH\",\n                    \"siteName\": \"LAEM CHABANG PORT B1\",\n                    \"cityName\": \"Laem Chabang\",\n                    \"countryName\": \"Thailand\",\n                    \"countryCode\": \"TH\"\n                },\n                \"currentEtaLocal\": \"2018-11-15T08:00:00.000\",\n                \"arrivalMaerskGeoIdName\": \"LAEM CHABANG PORT B1               \",\n                \"currentEtaUTC\": \"2018-11-15T01:00:00.000\"\n            }\n        },\n        {\n            \"freightMode\": \"W\",\n            \"modeCode\": \"MVS\",\n            \"modeDescription\": \"MOTHER VESSEL\",\n            \"departureVoyageNo\": \"835S\",\n            \"serviceCode\": \"080\",\n            \"vessel\": {\n                \"maerskId\": \"A7V\",\n                \"name\": \"LISBON\",\n                \"imoNumber\": \"9248148\",\n                \"flagCode\": \"PT\",\n                \"buildYear\": \"2003\",\n                \"callSign\": \"CQGZ\"\n            },\n            \"start\": {\n                \"isPlaceOfReceipt\": false,\n                \"isPortOfLoading\": true,\n                \"location\": {\n                    \"maerskGeoLocationId\": \"17TABFY4GWNWS\",\n                    \"unLocCode\": \"THLCH\",\n                    \"siteName\": \"LAEM CHABANG PORT B1\",\n                    \"cityName\": \"Laem Chabang\",\n                    \"countryName\": \"Thailand\",\n                    \"countryCode\": \"TH\"\n                },\n                \"currentEtdLocal\": \"2018-11-17T16:00:00.000\",\n                \"departureMaerskGeoIdName\": \"LAEM CHABANG PORT B1               \",\n                \"currentEtdUTC\": \"2018-11-17T08:00:00.000\"\n            },\n            \"end\": {\n                \"isPortOfDischarge\": false,\n                \"isPlaceOfDelivery\": false,\n                \"location\": {\n                    \"maerskGeoLocationId\": \"00YSAZHW6VRIK\",\n                    \"unLocCode\": \"MYTPP\",\n                    \"siteName\": \"Pelabuhan Tanjung Pelepas Terminal\",\n                    \"cityName\": \"Tanjung Pelepas\",\n                    \"regionCode\": \"01\",\n                    \"regionName\": \"Johor\",\n                    \"countryName\": \"Malaysia\",\n                    \"countryCode\": \"MY\"\n                },\n                \"currentEtaLocal\": \"2018-11-19T19:00:00.000\",\n                \"arrivalMaerskGeoIdName\": \"Pelabuhan Tanjung Pelepas Terminal \",\n                \"currentEtaUTC\": \"2018-11-19T11:00:00.000\"\n            }\n        },\n        {\n            \"freightMode\": \"W\",\n            \"modeCode\": \"MVS\",\n            \"modeDescription\": \"MOTHER VESSEL\",\n            \"departureVoyageNo\": \"846W\",\n            \"serviceCode\": \"433\",\n            \"vessel\": {\n                \"maerskId\": \"I45\",\n                \"name\": \"MSC EVA\",\n                \"imoNumber\": \"9401130\",\n                \"flagCode\": \"PA\",\n                \"flagName\": \"Panama\",\n                \"buildYear\": \"2010\",\n                \"callSign\": \"3EVM7\"\n            },\n            \"start\": {\n                \"isPlaceOfReceipt\": false,\n                \"isPortOfLoading\": false,\n                \"location\": {\n                    \"maerskGeoLocationId\": \"00YSAZHW6VRIK\",\n                    \"unLocCode\": \"MYTPP\",\n                    \"siteName\": \"Pelabuhan Tanjung Pelepas Terminal\",\n                    \"cityName\": \"Tanjung Pelepas\",\n                    \"regionCode\": \"01\",\n                    \"regionName\": \"Johor\",\n                    \"countryName\": \"Malaysia\",\n                    \"countryCode\": \"MY\"\n                },\n                \"currentEtdLocal\": \"2018-11-24T23:00:00.000\",\n                \"departureMaerskGeoIdName\": \"Pelabuhan Tanjung Pelepas Terminal \",\n                \"currentEtdUTC\": \"2018-11-24T22:00:00.000\"\n            },\n            \"end\": {\n                \"isPortOfDischarge\": false,\n                \"isPlaceOfDelivery\": false,\n                \"location\": {\n                    \"maerskGeoLocationId\": \"0NTE1JGVL9NBT\",\n                    \"unLocCode\": \"ESALG\",\n                    \"siteName\": \"Algeciras ML Terminal\",\n                    \"cityName\": \"Algeciras\",\n                    \"countryName\": \"Spain\",\n                    \"countryCode\": \"ES\"\n                },\n                \"currentEtaLocal\": \"2018-12-10T02:01:00.000\",\n                \"arrivalMaerskGeoIdName\": \"Algeciras ML Terminal              \",\n                \"currentEtaUTC\": \"2018-12-10T01:01:00.000\"\n            }\n        },\n        {\n            \"freightMode\": \"W\",\n            \"modeCode\": \"FEO\",\n            \"modeDescription\": \"FEEDER OWN\",\n            \"departureVoyageNo\": \"852E\",\n            \"serviceCode\": \"L65\",\n            \"vessel\": {\n                \"maerskId\": \"H2F\",\n                \"name\": \"GEESKE\",\n                \"imoNumber\": \"9301562\",\n                \"flagCode\": \"PT\",\n                \"buildYear\": \"2005\",\n                \"callSign\": \"CQIS5\"\n            },\n            \"start\": {\n                \"isPlaceOfReceipt\": false,\n                \"isPortOfLoading\": false,\n                \"location\": {\n                    \"maerskGeoLocationId\": \"0NTE1JGVL9NBT\",\n                    \"unLocCode\": \"ESALG\",\n                    \"siteName\": \"Algeciras ML Terminal\",\n                    \"cityName\": \"Algeciras\",\n                    \"countryName\": \"Spain\",\n                    \"countryCode\": \"ES\"\n                },\n                \"currentEtdLocal\": \"2018-12-27T08:00:00.000\",\n                \"departureMaerskGeoIdName\": \"Algeciras ML Terminal              \",\n                \"currentEtdUTC\": \"2018-12-27T08:00:00.000\"\n            },\n            \"end\": {\n                \"isPortOfDischarge\": true,\n                \"isPlaceOfDelivery\": true,\n                \"originalEtaLocal\": \"2019-01-01T12:00:00.000\",\n                \"currentEtaLocal\": \"2018-12-29T12:00:00.000\",\n                \"currentEtaUTC\": \"2018-12-29T12:00:00.000\"\n            }\n        }\n    ],\n    \"shipments\": [\n        {\n            \"id\": \"606180411\",\n            \"cargoTypes\": [],\n            \"cargoDetails\": [],\n            \"containers\": []\n        }\n    ],\n    \"parties\": [],\n    \"isDestinationPending\": true\n}"
+				},
+				{
+					"name": "606180412",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/booking/billsOfLading/:BOL?customerCode=10000007951&brandCode=MAEU",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"booking",
+								"billsOfLading",
+								":BOL"
+							],
+							"query": [
+								{
+									"key": "customerCode",
+									"value": "10000007951"
+								},
+								{
+									"key": "brandCode",
+									"value": "MAEU"
+								}
+							],
+							"variable": [
+								{
+									"key": "BOL",
+									"value": "606180412"
+								}
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n    \"id\": \"606180412\",\r\n    \"motherShipmentId\": \"606180412\",\r\n    \"brandCode\": \"MAEU\",\r\n    \"etaChangeReason\": \"There was a change in the vessel schedule, which impacts the arrival date/time of your shipment at destination.\",\r\n    \"etaLastUpdated\": \"2018-12-19T05:12:50\",\r\n    \"exportServiceMode\": \"CY\",\r\n    \"importServiceMode\": \"CY\",\r\n    \"transportPlan\": [\r\n        {\r\n            \"freightMode\": \"W\",\r\n            \"modeCode\": \"MVS\",\r\n            \"modeDescription\": \"MOTHER VESSEL\",\r\n            \"departureVoyageNo\": \"846E\",\r\n            \"serviceCode\": \"431\",\r\n            \"vessel\": {\r\n                \"maerskId\": \"1LM\",\r\n                \"name\": \"MAGLEBY MAERSK\",\r\n                \"imoNumber\": \"9619957\",\r\n                \"flagCode\": \"DK\",\r\n                \"buildYear\": \"2014\",\r\n                \"callSign\": \"OWJI2\"\r\n            },\r\n            \"start\": {\r\n                \"isPlaceOfReceipt\": true,\r\n                \"isPortOfLoading\": true,\r\n                \"location\": {\r\n                    \"maerskGeoLocationId\": \"013WW44HWHFUN\",\r\n                    \"unLocCode\": \"SEGOT\",\r\n                    \"siteName\": \"APM Terminals Gothenburg AB\",\r\n                    \"cityName\": \"Gothenburg\",\r\n                    \"countryName\": \"Sweden\",\r\n                    \"countryCode\": \"SE\"\r\n                },\r\n                \"originalEtdLocal\": \"2018-11-14T18:00:00.000\",\r\n                \"currentEtdLocal\": \"2018-11-14T15:00:00.000\",\r\n                \"departureMaerskGeoIdName\": \"APM Terminals Gothenburg AB        \",\r\n                \"currentEtdUTC\": \"2018-11-14T14:00:00.000\"\r\n            },\r\n            \"end\": {\r\n                \"isPortOfDischarge\": true,\r\n                \"isPlaceOfDelivery\": true,\r\n                \"originalEtaLocal\": \"2018-12-20T00:01:00.000\",\r\n                \"currentEtaLocal\": \"2018-12-20T04:00:00.000\",\r\n                \"currentEtaUTC\": \"2018-12-19T20:00:00.000\"\r\n            }\r\n        }\r\n    ],\r\n    \"shipments\": [\r\n        {\r\n            \"id\": \"606180412\",\r\n            \"cargoTypes\": [],\r\n            \"cargoDetails\": [],\r\n            \"containers\": []\r\n        }\r\n    ],\r\n    \"bookedByReference\": \"AGH093782,AGH093782 / AGH526892\",\r\n    \"parties\": [],\r\n    \"isDestinationPending\": true\r\n}"
+				},
+				{
+					"name": "582323185",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/booking/billsOfLading/:BOL?customerCode=10000007951&brandCode=MAEU",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"booking",
+								"billsOfLading",
+								":BOL"
+							],
+							"query": [
+								{
+									"key": "customerCode",
+									"value": "10000007951"
+								},
+								{
+									"key": "brandCode",
+									"value": "MAEU"
+								}
+							],
+							"variable": [
+								{
+									"key": "BOL",
+									"value": "582323185"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"method\": \"GET\",\n    \"requestUri\": \"/billsOfLading/582323185\",\n    \"status\": 404,\n    \"timestamp\": \"18-07-2021 16:22:51\",\n    \"message\": \"Data not found\",\n    \"debugMessage\": \"The data you seek is not here.\",\n    \"id\": \"59dba3e0-bd70-4eea-a6c0-c375f94c3d43\"\n}"
+				}
+			]
+		}
+	]
+}
