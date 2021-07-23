@@ -1,13 +1,13 @@
 {
 	"info": {
-		"_postman_id": "13776477-a39b-4ff0-a522-6b7f1c6970a3",
+		"_postman_id": "8303e022-8c05-473a-bf40-bb1089f2f52d",
 		"name": "Location_Mock_Delivery_Order_V2",
 		"description": "version=1.0 - This is a location API description",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "locations/?maerskRkstCode={{rkstcode}}",
+			"name": "locations/:loc",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -19,13 +19,439 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{url}}/locations/?maerskRkstCode={{rkstcode}}",
+					"raw": "{{url}}/locations/:loc",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"locations",
-						""
+						":loc"
+					],
+					"variable": [
+						{
+							"key": "loc"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "0MZSJ9SROEGKD",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "0MZSJ9SROEGKD"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"0MZSJ9SROEGKD\",\n    \"unLocCode\": \"GBFXT\",\n    \"countryName\": \"United Kingdom\",\n    \"countryCode\": \"GB\",\n    \"cityName\": \"Felixstowe\",\n    \"siteName\": \"FELIXSTOWE TRINITY TERMINAL\",\n    \"maerskRkstCode\": \"GBFXSTM\",\n    \"maerskRktsCode\": \"FXS\",\n    \"timezoneId\": \"Europe/London\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"21X0YL36747LQ\"\n}"
+				},
+				{
+					"name": "00YSAZHW6VRIK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "00YSAZHW6VRIK"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"00YSAZHW6VRIK\",\n    \"unLocCode\": \"MYTPP\",\n    \"countryName\": \"Malaysia\",\n    \"countryCode\": \"MY\",\n    \"cityName\": \"Tanjung Pelepas\",\n    \"regionCode\": \"01\",\n    \"regionName\": \"Johor\",\n    \"siteName\": \"Pelabuhan Tanjung Pelepas Terminal\",\n    \"maerskRkstCode\": \"MYTPPTM\",\n    \"maerskRktsCode\": \"TPP\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"2FVHH10N62PA6\"\n}"
+				},
+				{
+					"name": "CDQYK28YV7BKN",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "CDQYK28YV7BKN"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"CDQYK28YV7BKN\",\n    \"unLocCode\": \"MAPTM\",\n    \"countryName\": \"Morocco\",\n    \"countryCode\": \"MA\",\n    \"cityName\": \"Port Tangier Mediterranee\",\n    \"siteName\": \"Tanger Med 2\",\n    \"maerskRkstCode\": \"MAPTM02\",\n    \"maerskRktsCode\": \"CJ1\",\n    \"brands\": [\n        \"MAEU\",\n        \"MCPU\",\n        \"SAFM\",\n        \"SEAU\",\n        \"SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport\",\n        \"Maersk Line\",\n        \"Safmarine\",\n        \"SeaGo Line\",\n        \"SeaLand\"\n    ],\n    \"countryGeoId\": \"382FOT0PLIJY6\"\n}"
+				},
+				{
+					"name": "1N508BJG3AOUX",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "1N508BJG3AOUX"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"1N508BJG3AOUX\",\n    \"unLocCode\": \"MAAGA\",\n    \"countryName\": \"Morocco\",\n    \"countryCode\": \"MA\",\n    \"cityName\": \"Agadir\",\n    \"siteName\": \"Agadir Terminal\",\n    \"maerskRkstCode\": \"MAAGATM\",\n    \"maerskRktsCode\": \"AGD\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"382FOT0PLIJY6\"\n}"
+				},
+				{
+					"name": "KYKBROU8A0XZB",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "KYKBROU8A0XZB"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "\r\n{\r\n  \"method\": \"GET\",\r\n  \"requestUri\": \"/locations\",\r\n  \"status\": 404,\r\n  \"timestamp\": \"27-10-2020 12:11:51\",\r\n  \"message\": \"Data not found\",\r\n  \"debugMessage\": \"Data you seek is not here\",\r\n  \"id\": \"ca28de5b-90b0-4505-9d8e-4090594f550b\"\r\n}"
+				},
+				{
+					"name": "1AYRKRN7RCTFS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "1AYRKRN7RCTFS"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"1AYRKRN7RCTFS\",\n    \"unLocCode\": \"INMUN\",\n    \"countryName\": \"India\",\n    \"countryCode\": \"IN\",\n    \"cityName\": \"Mundra\",\n    \"regionCode\": \"GJ\",\n    \"regionName\": \"GUJARAT\",\n    \"siteName\": \"Adani CMA Mundra container terminal\",\n    \"maerskRkstCode\": \"INLT4AT\",\n    \"maerskRktsCode\": \"LT4\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"10Z2W9ZTH2RUM\"\n}"
+				},
+				{
+					"name": "HHMT8D8RO96BR",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "HHMT8D8RO96BR"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"HHMT8D8RO96BR\",\n    \"unLocCode\": \"NLRTM\",\n    \"countryName\": \"Netherlands\",\n    \"countryCode\": \"NL\",\n    \"cityName\": \"Rotterdam\",\n    \"regionCode\": \"ZH\",\n    \"regionName\": \"Zuid-Holland\",\n    \"siteName\": \"APM Terminal Maasvlakte Test\",\n    \"maerskRkstCode\": \"NLROTTM\",\n    \"maerskRktsCode\": \"ROT\",\n    \"timezoneId\": \"Europe/Amsterdam\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"0QKGIC8VAS51A\"\n}"
+				},
+				{
+					"name": "1BWQQL3BHHKE7",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "1BWQQL3BHHKE7"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"type\": \"CITY\",\n    \"maerskGeoLocationId\": \"1BWQQL3BHHKE7\",\n    \"unLocCode\": \"NOOSL\",\n    \"countryName\": \"Norway\",\n    \"countryCode\": \"NO\",\n    \"cityName\": \"Oslo\",\n    \"maerskRkstCode\": \"NOOSL\",\n    \"maerskRktsCode\": \"OSL\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"0ICDDA1XK7L32\"\n}"
+				},
+				{
+					"name": "3SVQGPQY77WCF",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "3SVQGPQY77WCF"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"type\": \"CITY\",\n    \"maerskGeoLocationId\": \"3SVQGPQY77WCF\",\n    \"unLocCode\": \"SEHEL\",\n    \"countryName\": \"Sweden\",\n    \"countryCode\": \"SE\",\n    \"cityName\": \"Helsingborg\",\n    \"maerskRkstCode\": \"SEAGH\",\n    \"maerskRktsCode\": \"AGH\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"0QKLT746U467Y\"\n}"
+				},
+				{
+					"name": "29BBZ9CR2FMNZ",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "29BBZ9CR2FMNZ"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"type\": \"CITY\",\n    \"maerskGeoLocationId\": \"29BBZ9CR2FMNZ\",\n    \"unLocCode\": \"LRMLW\",\n    \"countryName\": \"Liberia\",\n    \"countryCode\": \"LR\",\n    \"cityName\": \"Monrovia\",\n    \"maerskRkstCode\": \"LRMLW\",\n    \"maerskRktsCode\": \"MLW\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"1QFAE7WFXDFUM\"\n}"
+				},
+				{
+					"name": "00U0BM597Q9OF",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "00U0BM597Q9OF"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"type\": \"CITY\",\n    \"maerskGeoLocationId\": \"00U0BM597Q9OF\",\n    \"countryName\": \"Morocco\",\n    \"countryCode\": \"MA\",\n    \"cityName\": \"Settat\",\n    \"maerskRkstCode\": \"MASET\",\n    \"maerskRktsCode\": \"L9Q\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"382FOT0PLIJY6\"\n}"
+				},
+				{
+					"name": "2V7IAKY71KBBA",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/locations/:loc",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"locations",
+								":loc"
+							],
+							"variable": [
+								{
+									"key": "loc",
+									"value": "2V7IAKY71KBBA"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"2V7IAKY71KBBA\",\n    \"unLocCode\": \"AUSYD\",\n    \"countryName\": \"Australia\",\n    \"countryCode\": \"AU\",\n    \"cityName\": \"Sydney\",\n    \"regionCode\": \"QLD\",\n    \"regionName\": \"Queensland\",\n    \"siteName\": \"Sydney Patricks Terminal\",\n    \"maerskRkstCode\": \"AUSYD11\",\n    \"maerskRktsCode\": \"SYD\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"3QEL6PP553JI6\"\n}"
+				}
+			]
+		},
+		{
+			"name": "locations?maerskRkstCode={{rkstcode}}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/locations?maerskRkstCode={{rkstcode}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"locations"
 					],
 					"query": [
 						{
@@ -46,13 +472,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{url}}/locations/?maerskRkstCode=GBFXS",
+							"raw": "{{url}}/locations?maerskRkstCode=GBFXS",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"locations",
-								""
+								"locations"
 							],
 							"query": [
 								{
@@ -79,13 +504,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{url}}/locations/?maerskRkstCode=MYTPP",
+							"raw": "{{url}}/locations?maerskRkstCode=MYTPP",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"locations",
-								""
+								"locations"
 							],
 							"query": [
 								{
@@ -100,7 +524,7 @@
 					"_postman_previewlanguage": "json",
 					"header": null,
 					"cookie": [],
-					"body": "{\r\n    \"type\": \"CITY\",\r\n    \"maerskGeoLocationId\": \"2DTLIHUG9YN7S\",\r\n    \"unLocCode\": \"MYTPP\",\r\n    \"countryName\": \"Malaysia\",\r\n    \"countryCode\": \"MY\",\r\n    \"cityName\": \"Tanjung Pelepas\",\r\n    \"regionCode\": \"01\",\r\n    \"regionName\": \"Johor\",\r\n    \"maerskRkstCode\": \"MYTPP\",\r\n    \"maerskRktsCode\": \"TPP\",\r\n    \"timezoneId\": \"\",\r\n    \"brands\": [\r\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\r\n    ],\r\n    \"brandNames\": [\r\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\r\n    ],\r\n    \"countryGeoId\": \"2FVHH10N62PA6\"\r\n}"
+					"body": "{\n    \"type\": \"CITY\",\n    \"maerskGeoLocationId\": \"2DTLIHUG9YN7S\",\n    \"unLocCode\": \"MYTPP\",\n    \"countryName\": \"Malaysia\",\n    \"countryCode\": \"MY\",\n    \"cityName\": \"Tanjung Pelepas\",\n    \"regionCode\": \"01\",\n    \"regionName\": \"Johor\",\n    \"maerskRkstCode\": \"MYTPP\",\n    \"maerskRktsCode\": \"TPP\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"2FVHH10N62PA6\"\n}"
 				},
 				{
 					"name": "MAPTM",
@@ -112,13 +536,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{url}}/locations/?maerskRkstCode=MAPTM",
+							"raw": "{{url}}/locations?maerskRkstCode=MAPTM",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"locations",
-								""
+								"locations"
 							],
 							"query": [
 								{
@@ -145,13 +568,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{url}}/locations/?maerskRkstCode=MAAGA",
+							"raw": "{{url}}/locations?maerskRkstCode=MAAGA",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"locations",
-								""
+								"locations"
 							],
 							"query": [
 								{
@@ -166,7 +588,7 @@
 					"_postman_previewlanguage": "json",
 					"header": null,
 					"cookie": [],
-					"body": "{\n    \"type\": \"CITY\",\n    \"maerskGeoLocationId\": \"38CMBIXBBPI0V\",\n    \"unLocCode\": \"MAAGA\",\n    \"countryName\": \"Morocco\",\n    \"countryCode\": \"MA\",\n    \"cityName\": \"Agadir\",\n    \"maerskRkstCode\": \"MAAGA\",\n    \"maerskRktsCode\": \"AGD\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"382FOT0PLIJY6\"\n}"
+					"body": "{\r\n    \"type\": \"CITY\",\r\n    \"maerskGeoLocationId\": \"38CMBIXBBPI0V\",\r\n    \"unLocCode\": \"MAAGA\",\r\n    \"countryName\": \"Morocco\",\r\n    \"countryCode\": \"MA\",\r\n    \"cityName\": \"Agadir\",\r\n    \"maerskRkstCode\": \"MAAGA\",\r\n    \"maerskRktsCode\": \"AGD\",\r\n    \"timezoneId\": \"\",\r\n    \"brands\": [\r\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\r\n    ],\r\n    \"brandNames\": [\r\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\r\n    ],\r\n    \"countryGeoId\": \"382FOT0PLIJY6\"\r\n}"
 				},
 				{
 					"name": "INLT4",
@@ -178,13 +600,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{url}}/locations/?maerskRkstCode=INLT4",
+							"raw": "{{url}}/locations?maerskRkstCode=INLT4",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"locations",
-								""
+								"locations"
 							],
 							"query": [
 								{
@@ -211,13 +632,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{url}}/locations/?maerskRkstCode=NLROT",
+							"raw": "{{url}}/locations?maerskRkstCode=NLROT",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"locations",
-								""
+								"locations"
 							],
 							"query": [
 								{
@@ -232,7 +652,7 @@
 					"_postman_previewlanguage": "json",
 					"header": null,
 					"cookie": [],
-					"body": "{\r\n    \"type\": \"CITY\",\r\n    \"maerskGeoLocationId\": \"1JUKNJGWHQBNJ\",\r\n    \"unLocCode\": \"NLRTM\",\r\n    \"countryName\": \"Netherlands\",\r\n    \"countryCode\": \"NL\",\r\n    \"cityName\": \"Rotterdam\",\r\n    \"regionCode\": \"ZH\",\r\n    \"regionName\": \"Zuid-Holland\",\r\n    \"maerskRkstCode\": \"NLROT\",\r\n    \"maerskRktsCode\": \"ROT\",\r\n    \"timezoneId\": \"Europe/Amsterdam\",\r\n    \"brands\": [\r\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\r\n    ],\r\n    \"brandNames\": [\r\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\r\n    ],\r\n    \"countryGeoId\": \"0QKGIC8VAS51A\"\r\n}"
+					"body": "{\n    \"type\": \"CITY\",\n    \"maerskGeoLocationId\": \"1JUKNJGWHQBNJ\",\n    \"unLocCode\": \"NLRTM\",\n    \"countryName\": \"Netherlands\",\n    \"countryCode\": \"NL\",\n    \"cityName\": \"Rotterdam\",\n    \"regionCode\": \"ZH\",\n    \"regionName\": \"Zuid-Holland\",\n    \"maerskRkstCode\": \"NLROT\",\n    \"maerskRktsCode\": \"ROT\",\n    \"timezoneId\": \"Europe/Amsterdam\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"0QKGIC8VAS51A\"\n}"
 				},
 				{
 					"name": "NOOSL",
@@ -244,13 +664,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{url}}/locations/?maerskRkstCode=NOOSL",
+							"raw": "{{url}}/locations?maerskRkstCode=NOOSL",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"locations",
-								""
+								"locations"
 							],
 							"query": [
 								{
@@ -265,7 +684,7 @@
 					"_postman_previewlanguage": "json",
 					"header": null,
 					"cookie": [],
-					"body": "{\r\n    \"type\": \"CITY\",\r\n    \"maerskGeoLocationId\": \"1BWQQL3BHHKE7\",\r\n    \"unLocCode\": \"NOOSL\",\r\n    \"countryName\": \"Norway\",\r\n    \"countryCode\": \"NO\",\r\n    \"cityName\": \"Oslo\",\r\n    \"maerskRkstCode\": \"NOOSL\",\r\n    \"maerskRktsCode\": \"OSL\",\r\n    \"timezoneId\": \"\",\r\n    \"brands\": [\r\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\r\n    ],\r\n    \"brandNames\": [\r\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\r\n    ],\r\n    \"countryGeoId\": \"0ICDDA1XK7L32\"\r\n}"
+					"body": "{\n    \"type\": \"CITY\",\n    \"maerskGeoLocationId\": \"1BWQQL3BHHKE7\",\n    \"unLocCode\": \"NOOSL\",\n    \"countryName\": \"Norway\",\n    \"countryCode\": \"NO\",\n    \"cityName\": \"Oslo\",\n    \"maerskRkstCode\": \"NOOSL\",\n    \"maerskRktsCode\": \"OSL\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"0ICDDA1XK7L32\"\n}"
 				},
 				{
 					"name": "SEAGH",
@@ -277,13 +696,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{url}}/locations/?maerskRkstCode=SEAGH",
+							"raw": "{{url}}/locations?maerskRkstCode=SEAGH",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"locations",
-								""
+								"locations"
 							],
 							"query": [
 								{
@@ -310,13 +728,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{url}}/locations/?maerskRkstCode=LRMLW",
+							"raw": "{{url}}/locations?maerskRkstCode=LRMLW",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"locations",
-								""
+								"locations"
 							],
 							"query": [
 								{
@@ -343,13 +760,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{url}}/locations/?maerskRkstCode=AUSYD",
+							"raw": "{{url}}/locations?maerskRkstCode=AUSYD",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"locations",
-								""
+								"locations"
 							],
 							"query": [
 								{
@@ -376,13 +792,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{url}}/locations/?maerskRkstCode=MASET",
+							"raw": "{{url}}/locations?maerskRkstCode=MASET",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"locations",
-								""
+								"locations"
 							],
 							"query": [
 								{
@@ -397,430 +812,7 @@
 					"_postman_previewlanguage": "json",
 					"header": null,
 					"cookie": [],
-					"body": "{\n    \"type\": \"CITY\",\n    \"maerskGeoLocationId\": \"00U0BM597Q9OF\",\n    \"countryName\": \"Morocco\",\n    \"countryCode\": \"MA\",\n    \"cityName\": \"Settat\",\n    \"maerskRkstCode\": \"MASET\",\n    \"maerskRktsCode\": \"L9Q\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"382FOT0PLIJY6\"\n}"
-				}
-			]
-		},
-		{
-			"name": "locations/:location",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "{{url}}/locations/:location",
-					"host": [
-						"{{url}}"
-					],
-					"path": [
-						"locations",
-						":location"
-					],
-					"variable": [
-						{
-							"key": "location"
-						}
-					]
-				}
-			},
-			"response": [
-				{
-					"name": "0MZSJ9SROEGKD",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{url}}/locations/:location",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"locations",
-								":location"
-							],
-							"variable": [
-								{
-									"key": "location",
-									"value": "0MZSJ9SROEGKD"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"0MZSJ9SROEGKD\",\n    \"unLocCode\": \"GBFXT\",\n    \"countryName\": \"United Kingdom\",\n    \"countryCode\": \"GB\",\n    \"cityName\": \"Felixstowe\",\n    \"siteName\": \"FELIXSTOWE TRINITY TERMINAL\",\n    \"maerskRkstCode\": \"GBFXSTM\",\n    \"maerskRktsCode\": \"FXS\",\n    \"timezoneId\": \"Europe/London\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"21X0YL36747LQ\"\n}"
-				},
-				{
-					"name": "00YSAZHW6VRIK",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{url}}/locations/:location",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"locations",
-								":location"
-							],
-							"variable": [
-								{
-									"key": "location",
-									"value": "00YSAZHW6VRIK"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"00YSAZHW6VRIK\",\n    \"unLocCode\": \"MYTPP\",\n    \"countryName\": \"Malaysia\",\n    \"countryCode\": \"MY\",\n    \"cityName\": \"Tanjung Pelepas\",\n    \"regionCode\": \"01\",\n    \"regionName\": \"Johor\",\n    \"siteName\": \"Pelabuhan Tanjung Pelepas Terminal\",\n    \"maerskRkstCode\": \"MYTPPTM\",\n    \"maerskRktsCode\": \"TPP\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"2FVHH10N62PA6\"\n}"
-				},
-				{
-					"name": "CDQYK28YV7BKN",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{url}}/locations/:location",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"locations",
-								":location"
-							],
-							"variable": [
-								{
-									"key": "location",
-									"value": "CDQYK28YV7BKN"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"CDQYK28YV7BKN\",\n    \"unLocCode\": \"MAPTM\",\n    \"countryName\": \"Morocco\",\n    \"countryCode\": \"MA\",\n    \"cityName\": \"Port Tangier Mediterranee\",\n    \"siteName\": \"Tanger Med 2\",\n    \"maerskRkstCode\": \"MAPTM02\",\n    \"maerskRktsCode\": \"CJ1\",\n    \"brands\": [\n        \"MAEU\",\n        \"MCPU\",\n        \"SAFM\",\n        \"SEAU\",\n        \"SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport\",\n        \"Maersk Line\",\n        \"Safmarine\",\n        \"SeaGo Line\",\n        \"SeaLand\"\n    ],\n    \"countryGeoId\": \"382FOT0PLIJY6\"\n}"
-				},
-				{
-					"name": "1N508BJG3AOUX",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{url}}/locations/:location",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"locations",
-								":location"
-							],
-							"variable": [
-								{
-									"key": "location",
-									"value": "1N508BJG3AOUX"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"1N508BJG3AOUX\",\n    \"unLocCode\": \"MAAGA\",\n    \"countryName\": \"Morocco\",\n    \"countryCode\": \"MA\",\n    \"cityName\": \"Agadir\",\n    \"siteName\": \"Agadir Terminal\",\n    \"maerskRkstCode\": \"MAAGATM\",\n    \"maerskRktsCode\": \"AGD\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"382FOT0PLIJY6\"\n}"
-				},
-				{
-					"name": "KYKBROU8A0XZB",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{url}}/locations/:location",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"locations",
-								":location"
-							],
-							"variable": [
-								{
-									"key": "location",
-									"value": "KYKBROU8A0XZB"
-								}
-							]
-						}
-					},
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"body": "{\n    \"method\": \"GET\",\n    \"requestUri\": \"/locations\",\n    \"status\": 404,\n    \"timestamp\": \"27-10-2020 12:11:51\",\n    \"message\": \"Data not found\",\n    \"debugMessage\": \"Data you seek is not here\",\n    \"id\": \"ca28de5b-90b0-4505-9d8e-4090594f550b\"\n}"
-				},
-				{
-					"name": "1AYRKRN7RCTFS",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{url}}/locations/:location",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"locations",
-								":location"
-							],
-							"variable": [
-								{
-									"key": "location",
-									"value": "1AYRKRN7RCTFS"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"1AYRKRN7RCTFS\",\n    \"unLocCode\": \"INMUN\",\n    \"countryName\": \"India\",\n    \"countryCode\": \"IN\",\n    \"cityName\": \"Mundra\",\n    \"regionCode\": \"GJ\",\n    \"regionName\": \"GUJARAT\",\n    \"siteName\": \"Adani CMA Mundra container terminal\",\n    \"maerskRkstCode\": \"INLT4AT\",\n    \"maerskRktsCode\": \"LT4\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"10Z2W9ZTH2RUM\"\n}"
-				},
-				{
-					"name": "HHMT8D8RO96BR",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{url}}/locations/:location",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"locations",
-								":location"
-							],
-							"variable": [
-								{
-									"key": "location",
-									"value": "HHMT8D8RO96BR"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"HHMT8D8RO96BR\",\n    \"unLocCode\": \"NLRTM\",\n    \"countryName\": \"Netherlands\",\n    \"countryCode\": \"NL\",\n    \"cityName\": \"Rotterdam\",\n    \"regionCode\": \"ZH\",\n    \"regionName\": \"Zuid-Holland\",\n    \"siteName\": \"APM Terminal Maasvlakte Test\",\n    \"maerskRkstCode\": \"NLROTTM\",\n    \"maerskRktsCode\": \"ROT\",\n    \"timezoneId\": \"Europe/Amsterdam\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"0QKGIC8VAS51A\"\n}"
-				},
-				{
-					"name": "1BWQQL3BHHKE7",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{url}}/locations/:location",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"locations",
-								":location"
-							],
-							"variable": [
-								{
-									"key": "location",
-									"value": "1BWQQL3BHHKE7"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"body": "{\r\n    \"type\": \"CITY\",\r\n    \"maerskGeoLocationId\": \"1BWQQL3BHHKE7\",\r\n    \"unLocCode\": \"NOOSL\",\r\n    \"countryName\": \"Norway\",\r\n    \"countryCode\": \"NO\",\r\n    \"cityName\": \"Oslo\",\r\n    \"maerskRkstCode\": \"NOOSL\",\r\n    \"maerskRktsCode\": \"OSL\",\r\n    \"timezoneId\": \"\",\r\n    \"brands\": [\r\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\r\n    ],\r\n    \"brandNames\": [\r\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\r\n    ],\r\n    \"countryGeoId\": \"0ICDDA1XK7L32\"\r\n}"
-				},
-				{
-					"name": "3SVQGPQY77WCF",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{url}}/locations/:location",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"locations",
-								":location"
-							],
-							"variable": [
-								{
-									"key": "location",
-									"value": "3SVQGPQY77WCF"
-								}
-							]
-						}
-					},
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"body": "{\n    \"type\": \"CITY\",\n    \"maerskGeoLocationId\": \"3SVQGPQY77WCF\",\n    \"unLocCode\": \"SEHEL\",\n    \"countryName\": \"Sweden\",\n    \"countryCode\": \"SE\",\n    \"cityName\": \"Helsingborg\",\n    \"maerskRkstCode\": \"SEAGH\",\n    \"maerskRktsCode\": \"AGH\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"0QKLT746U467Y\"\n}"
-				},
-				{
-					"name": "29BBZ9CR2FMNZ",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{url}}/locations/:location",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"locations",
-								":location"
-							],
-							"variable": [
-								{
-									"key": "location",
-									"value": "29BBZ9CR2FMNZ"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"body": "{\n    \"type\": \"CITY\",\n    \"maerskGeoLocationId\": \"29BBZ9CR2FMNZ\",\n    \"unLocCode\": \"LRMLW\",\n    \"countryName\": \"Liberia\",\n    \"countryCode\": \"LR\",\n    \"cityName\": \"Monrovia\",\n    \"maerskRkstCode\": \"LRMLW\",\n    \"maerskRktsCode\": \"MLW\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"1QFAE7WFXDFUM\"\n}"
-				},
-				{
-					"name": "00U0BM597Q9OF",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{url}}/locations/:location",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"locations",
-								":location"
-							],
-							"variable": [
-								{
-									"key": "location",
-									"value": "00U0BM597Q9OF"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"body": "{\n    \"type\": \"CITY\",\n    \"maerskGeoLocationId\": \"00U0BM597Q9OF\",\n    \"countryName\": \"Morocco\",\n    \"countryCode\": \"MA\",\n    \"cityName\": \"Settat\",\n    \"maerskRkstCode\": \"MASET\",\n    \"maerskRktsCode\": \"L9Q\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"382FOT0PLIJY6\"\n}"
-				},
-				{
-					"name": "2V7IAKY71KBBA",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "{{url}}/locations/:location",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"locations",
-								":location"
-							],
-							"variable": [
-								{
-									"key": "location",
-									"value": "2V7IAKY71KBBA"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": null,
-					"cookie": [],
-					"body": "{\n    \"type\": \"TERMINAL\",\n    \"maerskGeoLocationId\": \"2V7IAKY71KBBA\",\n    \"unLocCode\": \"AUSYD\",\n    \"countryName\": \"Australia\",\n    \"countryCode\": \"AU\",\n    \"cityName\": \"Sydney\",\n    \"regionCode\": \"QLD\",\n    \"regionName\": \"Queensland\",\n    \"siteName\": \"Sydney Patricks Terminal\",\n    \"maerskRkstCode\": \"AUSYD11\",\n    \"maerskRktsCode\": \"SYD\",\n    \"timezoneId\": \"\",\n    \"brands\": [\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\n    ],\n    \"brandNames\": [\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\n    ],\n    \"countryGeoId\": \"3QEL6PP553JI6\"\n}"
+					"body": "{\r\n    \"type\": \"CITY\",\r\n    \"maerskGeoLocationId\": \"00U0BM597Q9OF\",\r\n    \"countryName\": \"Morocco\",\r\n    \"countryCode\": \"MA\",\r\n    \"cityName\": \"Settat\",\r\n    \"maerskRkstCode\": \"MASET\",\r\n    \"maerskRktsCode\": \"L9Q\",\r\n    \"timezoneId\": \"\",\r\n    \"brands\": [\r\n        \"MAEU,MCPU,SAFM,SEAU,SEJJ\"\r\n    ],\r\n    \"brandNames\": [\r\n        \"MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand\"\r\n    ],\r\n    \"countryGeoId\": \"382FOT0PLIJY6\"\r\n}"
 				}
 			]
 		}
