@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "83ef631c-bb94-45b8-be64-6a873b609283",
+		"name": "sample_post_call",
+		"description": "version=1.0 - This is a location API description",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "salesforce/main/cases/composite",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "{{url}}/salesforce/main/cases/composite"
+			},
+			"response": [
+				{
+					"name": "Booking1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"compositeRequest\" : [{\r\n        \"method\" : \"POST\",\r\n        \"url\" : \"/services/data/v52.0/sobjects/Case/\",\r\n        \"body\" : {\r\n            \"Description\" : \"Test Composite Case 1001\",\r\n            \"Type\" : \"Booking1\",\r\n            \"Sub_Type__c\" : \"Amend Booking Details\",\r\n            \"Case_Channel__c\" : \"Portal\",\r\n            \"Liner_Brand__c\" : \"Maersk Line\",\r\n            \"Portal_On_Behalf_Of__c\" : \"44100109427\",\r\n            \"Origin\" : \"MSLMyMaerskLine\",\r\n            \"MLL__c\" : false,\r\n            \"SuppliedEmail\" : \"deepthi.sreekantan@ust.com\",\r\n            \"RecordTypeId\" : \"012D0000000QoomIAC\"\r\n        },\r\n        \"referenceId\" : \"newCase\"\r\n    }, {\r\n        \"method\" : \"GET\",\r\n        \"url\" : \"/services/data/v52.0/query?q=SELECT+CaseNumber+FROM+Case+WHERE+Id='@{newCase.id}'\",\r\n        \"referenceId\" : \"caseRecord\"\r\n    }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/salesforce/main/cases/composite"
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n  \"compositeResponse\" : [ {\r\n    \"body\" : {\r\n      \"id\" : \"5003O000007jF90QAE\",\r\n      \"success\" : true,\r\n      \"errors\" : [ ]\r\n    },\r\n    \"httpHeaders\" : {\r\n      \"Location\" : \"/services/data/v52.0/sobjects/Case/5003O000007jF90QAE\"\r\n    },\r\n    \"httpStatusCode\" : 201,\r\n    \"referenceId\" : \"newCase\"\r\n  }, {\r\n    \"body\" : {\r\n      \"totalSize\" : 1,\r\n      \"done\" : true,\r\n      \"records\" : [ {\r\n        \"attributes\" : {\r\n          \"type\" : \"Case\",\r\n          \"url\" : \"/services/data/v52.0/sobjects/Case/5003O000007jF90QAE\"\r\n        },\r\n        \"CaseNumber\" : \"2106-135543681\"\r\n      } ]\r\n    },\r\n    \"httpHeaders\" : { },\r\n    \"httpStatusCode\" : 200,\r\n    \"referenceId\" : \"caseRecord\"\r\n  }, {\r\n    \"body\" : [ {\r\n      \"id\" : \"0683O0000016kdHQAQ\",\r\n      \"success\" : true,\r\n      \"errors\" : [ ]\r\n    }, {\r\n      \"id\" : \"0683O0000016kdIQAQ\",\r\n      \"success\" : true,\r\n      \"errors\" : [ ]\r\n    } ],\r\n    \"httpHeaders\" : { },\r\n    \"httpStatusCode\" : 200,\r\n    \"referenceId\" : \"newContentVersions\"\r\n  }, {\r\n    \"body\" : {\r\n      \"totalSize\" : 2,\r\n      \"done\" : true,\r\n      \"records\" : [ {\r\n        \"attributes\" : {\r\n          \"type\" : \"ContentVersion\",\r\n          \"url\" : \"/services/data/v52.0/sobjects/ContentVersion/0683O0000016kdHQAQ\"\r\n        },\r\n        \"ContentDocumentId\" : \"0693O000001AeP8QAK\"\r\n      }, {\r\n        \"attributes\" : {\r\n          \"type\" : \"ContentVersion\",\r\n          \"url\" : \"/services/data/v52.0/sobjects/ContentVersion/0683O0000016kdIQAQ\"\r\n        },\r\n        \"ContentDocumentId\" : \"0693O000001AeP9QAK\"\r\n      } ]\r\n    },\r\n    \"httpHeaders\" : { },\r\n    \"httpStatusCode\" : 200,\r\n    \"referenceId\" : \"contentVersionRecords\"\r\n  }, {\r\n    \"body\" : [ {\r\n      \"id\" : \"06A3O000001ftf9UAA\",\r\n      \"success\" : true,\r\n      \"errors\" : [ ]\r\n    }, {\r\n      \"id\" : \"06A3O000001ftfAUAQ\",\r\n      \"success\" : true,\r\n      \"errors\" : [ ]\r\n    } ],\r\n    \"httpHeaders\" : { },\r\n    \"httpStatusCode\" : 200,\r\n    \"referenceId\" : \"newContentDocumentLinks\"\r\n  } ]\r\n}"
+				},
+				{
+					"name": "Booking2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"compositeRequest\" : [{\r\n        \"method\" : \"POST\",\r\n        \"url\" : \"/services/data/v52.0/sobjects/Case/\",\r\n        \"body\" : {\r\n            \"Description\" : \"Test Composite Case 1001\",\r\n            \"Type\" : \"Booking2\",\r\n            \"Sub_Type__c\" : \"Amend Booking Details\",\r\n            \"Case_Channel__c\" : \"Portal\",\r\n            \"Liner_Brand__c\" : \"Maersk Line\",\r\n            \"Portal_On_Behalf_Of__c\" : \"44100109427\",\r\n            \"Origin\" : \"MSLMyMaerskLine\",\r\n            \"MLL__c\" : false,\r\n            \"SuppliedEmail\" : \"deepthi.sreekantan@ust.com\",\r\n            \"RecordTypeId\" : \"012D0000000QoomIAC\"\r\n        },\r\n        \"referenceId\" : \"newCase\"\r\n    }, {\r\n        \"method\" : \"GET\",\r\n        \"url\" : \"/services/data/v52.0/query?q=SELECT+CaseNumber+FROM+Case+WHERE+Id='@{newCase.id}'\",\r\n        \"referenceId\" : \"caseRecord\"\r\n    }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/salesforce/main/cases/composite"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "\r\n{\r\n  \"compositeResponse\" : [ {\r\n    \"body\" : {\r\n      \"id\" : \"5003O000007iyfgQAA\",\r\n      \"success\" : true,\r\n      \"errors\" : [ ]\r\n    },\r\n    \"httpHeaders\" : {\r\n      \"Location\" : \"/services/data/v52.0/sobjects/Case/5003O000007iyfgQAA\"\r\n    },\r\n    \"httpStatusCode\" : 201,\r\n    \"referenceId\" : \"newCase\"\r\n  }, {\r\n    \"body\" : {\r\n      \"totalSize\" : 1,\r\n      \"done\" : true,\r\n      \"records\" : [ {\r\n        \"attributes\" : {\r\n          \"type\" : \"Case\",\r\n          \"url\" : \"/services/data/v52.0/sobjects/Case/5003O000007iyfgQAA\"\r\n        },\r\n        \"CaseNumber\" : \"2105-135543633\"\r\n      } ]\r\n    },\r\n    \"httpHeaders\" : { },\r\n    \"httpStatusCode\" : 200,\r\n    \"referenceId\" : \"caseRecord\"\r\n  } ]\r\n}"
+				}
+			]
+		}
+	]
+}
