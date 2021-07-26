@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="d181cfc9-1c90-4334-99c3-76727272b4e2" activeEnvironment="Default" name="GetLocationV1" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:restMockService id="ed457508-5b19-4b93-99be-411edc23d1aa" port="8080" path="/" host="MMD5CG1056BT1" name="getLocationv1"><con:settings/><con:properties/><con:restMockAction name="/locations" method="GET" resourcePath="/locations" id="fa471340-8d35-4fef-965c-2e704e983eea"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath>
+// Script dispatcher is used to select a response based on the incoming request.&#13;
+// Here are few examples showing how to match based on path, query param, header and body&#13;
+&#13;
+// Match based on path&#13;
+def requestPath = mockRequest.getPath()&#13;
+log.info "Path: "+ requestPath&#13;
+
+def id = requestPath.tokenize('/')[-1] 
+
+return id 
+&#13;
+
+/*
+if( requestPath.contains("json") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "JSON Response"&#13;
+}&#13;
+
+
+// Match based on query parameter&#13;
+def queryString = mockRequest.getRequest().getQueryString()&#13;
+log.info "QueryString: " + queryString&#13;
+&#13;
+if( queryString.contains("stockholm") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "Response Stockholm"&#13;
+}&#13;
+else if( queryString.contains("london") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "Response London"&#13;
+}&#13;
+&#13;
+&#13;
+// Match based on header&#13;
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")&#13;
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList&#13;
+&#13;
+if( acceptEncodingHeaderList.contains("gzip,deflate") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "GZiped Response"&#13;
+}&#13;
+&#13;
+&#13;
+// Match based on body&#13;
+def requestBody = mockRequest.getRequestContent()&#13;
+log.info "Request body: " + requestBody&#13;
+&#13;
+if( requestBody.contains("some data") )&#13;
+{&#13;
+    // return the name of the response you want to dispatch&#13;
+    return "Response N"&#13;
+}&#13;
+*/&#13;
+</con:dispatchPath><con:response name="0MZSJ9SROEGKD Response" id="9985c9ae-c4bb-4dab-866e-a78b233d9597" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "type": "TERMINAL",
+    "maerskGeoLocationId": "0MZSJ9SROEGKD",
+    "unLocCode": "GBFXT",
+    "countryName": "United Kingdom",
+    "countryCode": "GB",
+    "cityName": "Felixstowe",
+    "siteName": "FELIXSTOWE TRINITY TERMINAL",
+    "maerskRkstCode": "GBFXSTM",
+    "maerskRktsCode": "FXS",
+    "timezoneId": "Europe/London",
+    "brands": [
+        "MAEU,MCPU,SAFM,SEAU,SEJJ"
+    ],
+    "brandNames": [
+        "MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand"
+    ],
+    "countryGeoId": "21X0YL36747LQ"
+}</con:responseContent></con:response><con:response name="00YSAZHW6VRIK Response" id="5f02f62f-5eb3-4847-805e-7ef2c6420dc9" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "type": "TERMINAL",
+    "maerskGeoLocationId": "00YSAZHW6VRIK",
+    "unLocCode": "MYTPP",
+    "countryName": "Malaysia",
+    "countryCode": "MY",
+    "cityName": "Tanjung Pelepas",
+    "regionCode": "01",
+    "regionName": "Johor",
+    "siteName": "Pelabuhan Tanjung Pelepas Terminal",
+    "maerskRkstCode": "MYTPPTM",
+    "maerskRktsCode": "TPP",
+    "timezoneId": "",
+    "brands": [
+        "MAEU,MCPU,SAFM,SEAU,SEJJ"
+    ],
+    "brandNames": [
+        "MCC Transport,Maersk Line,Safmarine,SeaGo Line,SeaLand"
+    ],
+    "countryGeoId": "2FVHH10N62PA6"
+}</con:responseContent></con:response></con:restMockAction></con:restMockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
